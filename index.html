@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="text-center">
+      <h1>Your Course Landing Page</h1>
+      <form action="style.css" method="get">
+        <div>
+          <label for="Course-Title">Course Title</label>
+          <input
+            class="alert alert-info"
+            type="text"
+            id="Course-Title"
+            placeholder="Course Title"
+          />
+        </div>
+
+        <div>
+          <label for="Course-Description">Course Description</label><br />
+          <textarea
+            class="alert alert-info"
+            name="text area"
+            id="Course-Description"
+            cols="30"
+            rows="10"
+            placeholder="Enter text"
+          >
+Course Description</textarea
+          >
+        </div>
+        <div>
+          <label for="skill-level">Skill Level:</label>
+          <select class="btn btn-info" name="Skill Level" id="skill-level">
+            <option value="b">Beginner</option>
+            <option value="a">Amateur</option>
+            <option value="i">Intermediate</option>
+          </select>
+        </div>
+        <div>
+          <label for="Check-box">Ready to publish the course?</label>
+          <input
+            class="btn btn-info"
+            type="checkbox"
+            name="Check box"
+            id="Check-box"
+            placeholder="Checkbox"
+          />
+        </div>
+        <div>
+          <h2>Agreement</h2>
+          <label for="Agreement">Yes</label>
+          <input
+            class="btn btn-info"
+            type="radio"
+            id="Agreement"
+            name="Agreement"
+          />
+          <label for="Agreement">No</label>
+          <input
+            class="btn btn-info"
+            type="radio"
+            id="Agreement"
+            name="Agreement"
+          />
+        </div>
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
